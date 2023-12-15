@@ -851,6 +851,31 @@ struct controller controller_list[] =
     }
   },
 
+  {
+    "st7920", 	16, 	4, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_001", "p", COM_8080,
+    "", /* is_generate_u8g2_class= */ 1,
+    {
+      { "128x32" },
+      { NULL }
+    }
+  },
+  {
+    "st7920", 	16, 	4, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_001", "", COM_6800,
+    "", /* is_generate_u8g2_class= */ 1,
+    {
+      { "128x32" },
+      { NULL }
+    }
+  },
+  {
+    "st7920", 	16, 	4, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_st7920_spi", "s", COM_ST7920SPI,
+    "", /* is_generate_u8g2_class= */ 1,
+    {
+      { "128x32" },
+      { NULL }
+    }
+  },
+
   
   {
     "st7920", 	20, 	4, 	"u8g2_ll_hvline_horizontal_right_lsb", "u8x8_cad_001", "p", COM_8080,
@@ -2032,6 +2057,7 @@ struct controller controller_list[] =
     "", /* is_generate_u8g2_class= */ 1,
     {
       { "240x128" },
+      { "topwin_240x128" },
       { NULL }
     }
   },
